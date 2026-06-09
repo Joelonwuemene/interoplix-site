@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FHIR &amp; HL7 Integration Consultant | Azure Healthcare Interoperability | Interoplix LLC</title>
-<meta name="description" content="Interoplix LLC is a FHIR and HL7 integration consultant practice. HIPAA-compliant healthcare interoperability on Azure Health Data Services for medical device manufacturers, health systems, and digital health companies.">
+<meta name="description" content="Interoplix LLC: FHIR and HL7 integration consultant. CMS-0057-F and CMS-9115-F FHIR API readiness and HIPAA-compliant interoperability on Azure Health Data Services for payers, health systems, and medical device manufacturers.">
 <link rel="canonical" href="https://interoplix.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://interoplix.com/">
@@ -70,7 +70,7 @@ section{padding:84px 0}
 .sec-title{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:600;letter-spacing:-0.015em;color:var(--navy);margin-bottom:18px;line-height:1.15}
 .sec-intro{font-size:1.12rem;font-weight:300;color:var(--slate);max-width:42em;margin-bottom:50px}
 
-.problems{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.problems{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .prob{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:32px 28px;transition:all 0.3s}
 .prob:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(26,58,92,0.12);border-color:transparent}
 .prob-dot{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-family:'Fraunces',serif;font-weight:600;color:var(--white);font-size:1.1rem}
@@ -168,7 +168,7 @@ footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center;
       <div class="hero-text">
         <span class="hero-eyebrow">FHIR &amp; HL7 Integration Consultant &middot; LLC</span>
         <h1>HL7 to FHIR pipelines that <em>fail safely</em>, not silently.</h1>
-        <p class="hero-sub">Interoplix designs and builds HIPAA-compliant healthcare integration and interoperability on Azure for medical device manufacturers, health systems, and digital health companies.</p>
+        <p class="hero-sub">Interoplix designs and builds HIPAA-compliant healthcare integration and interoperability on Azure for payers, medical device manufacturers, health systems, and digital health companies.</p>
         <div class="hero-actions">
           <a href="https://calendly.com/joel-interoplix/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Start a conversation &rarr;</a>
           <a href="#services" class="btn btn-ghost">View services</a>
@@ -196,9 +196,10 @@ footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center;
     <h2 class="sec-title reveal">The problems that surface in UAT, not development.</h2>
     <p class="sec-intro reveal">Most integration work looks fine until real clinical data hits the pipeline. Interoplix focuses on the failure modes that become regulatory findings if they reach production.</p>
     <div class="problems">
-      <div class="prob reveal"><div class="prob-dot" style="background:var(--blue)">1</div><h3>Devices that cannot reach FHIR-based EHRs</h3><p>HL7 v2.x instruments and systems that need to connect to Epic, Cerner, or cloud FHIR platforms without a clean transformation path.</p></div>
-      <div class="prob reveal"><div class="prob-dot" style="background:var(--teal)">2</div><h3>Pipelines with no compliance gate</h3><p>Azure healthcare integrations writing data with no validation, no audit trail, and no answer when an auditor asks how the environment was built.</p></div>
-      <div class="prob reveal"><div class="prob-dot" style="background:var(--amber)">3</div><h3>Architecture guidance without a full-time hire</h3><p>Teams that need senior integration architecture and HIPAA design judgment for a defined engagement, not a permanent headcount.</p></div>
+      <div class="prob reveal"><div class="prob-dot" style="background:var(--navy)">1</div><h3>Payers facing the CMS-0057 FHIR deadline</h3><p>Medicare Advantage, Medicaid, CHIP, and exchange payers that must run the Patient Access, Provider Access, Payer-to-Payer, and Prior Authorization FHIR APIs by 2027, built and integrated on Azure.</p></div>
+      <div class="prob reveal"><div class="prob-dot" style="background:var(--blue)">2</div><h3>Devices that cannot reach FHIR-based EHRs</h3><p>HL7 v2.x instruments and systems that need to connect to Epic, Cerner, or cloud FHIR platforms without a clean transformation path.</p></div>
+      <div class="prob reveal"><div class="prob-dot" style="background:var(--teal)">3</div><h3>Pipelines with no compliance gate</h3><p>Azure healthcare integrations writing data with no validation, no audit trail, and no answer when an auditor asks how the environment was built.</p></div>
+      <div class="prob reveal"><div class="prob-dot" style="background:var(--amber)">4</div><h3>Architecture guidance without a full-time hire</h3><p>Teams that need senior integration architecture and HIPAA design judgment for a defined engagement, not a permanent headcount.</p></div>
     </div>
   </div>
 </section>
