@@ -98,6 +98,21 @@ section{padding:84px 0}
 .portfolio-card p{font-size:1rem;font-weight:300;color:rgba(255,255,255,0.82);margin-bottom:26px}
 .portfolio-card a{display:inline-flex;align-items:center;gap:9px;color:var(--white);font-weight:500;text-decoration:none;border-bottom:1.5px solid var(--teal-light);padding-bottom:3px;font-size:1rem;transition:all 0.25s}
 .portfolio-card a:hover{color:var(--teal-light);gap:14px}
+.cred-fine{font-size:0.92rem !important;color:var(--slate) !important;padding-top:6px;border-top:1px solid var(--line);margin-top:4px}
+.cred-fine span{font-weight:300}
+.cases{margin-top:8px}
+.case{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px 38px;max-width:900px}
+.case-tag{font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+.case h3{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:600;color:var(--navy);margin-bottom:22px;line-height:1.2}
+.case-row{display:flex;gap:18px;margin-bottom:18px}
+.case-row:last-child{margin-bottom:0}
+.case-k{flex-shrink:0;width:108px;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--slate);padding-top:2px}
+.case-v{font-size:1.02rem;font-weight:300;color:var(--ink);line-height:1.55}
+.case-v b{font-weight:600;color:var(--navy)}
+.case-metrics{display:flex;flex-wrap:wrap;gap:28px;margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
+.case-metric b{display:block;font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;color:var(--teal);line-height:1}
+.case-metric span{font-size:0.85rem;font-weight:300;color:var(--slate);margin-top:5px;display:block}
+@media(max-width:640px){.case-row{flex-direction:column;gap:4px}.case-k{width:auto}}
 
 .resources{background:var(--mist)}
 .architecture{background:var(--white)}
@@ -186,13 +201,13 @@ footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center;
     <div class="strip-item"><b>8 yrs</b>Healthcare integration delivery</div>
     <div class="strip-item"><b>30+</b>Device connectivity projects</div>
     <div class="strip-item"><b>17</b>Countries across EMEA &amp; N. America</div>
-    <div class="strip-item"><b>AZ-305</b>Azure Solutions Architect Expert</div>
+    <div class="strip-item"><b>Azure</b>HIPAA cloud architecture specialists</div>
   </div>
 </div>
 
 <section id="problems">
   <div class="wrap">
-    <div class="sec-label reveal">What I solve</div>
+    <div class="sec-label reveal">What we solve</div>
     <h2 class="sec-title reveal">The problems that surface in UAT, not development.</h2>
     <p class="sec-intro reveal">Most integration work looks fine until real clinical data hits the pipeline. Interoplix focuses on the failure modes that become regulatory findings if they reach production.</p>
     <div class="problems">
@@ -206,9 +221,9 @@ footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center;
 
 <section id="services" class="services">
   <div class="wrap">
-    <div class="sec-label reveal">How I work</div>
+    <div class="sec-label reveal">How we work</div>
     <h2 class="sec-title reveal">Three ways to engage.</h2>
-    <p class="sec-intro reveal">As an independent FHIR and HL7 integration consultant, I keep engagements scoped. Clear scope, defined deliverables, and a published rate card. No open-ended hourly assessments.</p>
+    <p class="sec-intro reveal">Interoplix is a specialist FHIR and HL7 integration practice that scales with senior associates for larger engagements. We keep engagements scoped: clear deliverables and a published rate card. No open-ended hourly assessments.</p>
     <div class="tiers">
       <div class="tier reveal"><div class="tier-tag">Tier 1</div><h3>Assessment &amp; Audit</h3><div class="tier-price">$2,500 &ndash; $5,000 flat</div><p>Current-state HL7/FHIR integration review, HIPAA gap analysis, and Azure architecture assessment. Delivered as a written findings report with a prioritised remediation roadmap.</p></div>
       <div class="tier reveal"><div class="tier-tag">Tier 2</div><h3>Implementation</h3><div class="tier-price">$150 &ndash; $250 / hour</div><p>Hands-on delivery. Azure Health Data Services pipeline build, HL7 v2.x to FHIR R4 transformation, validation gates, CI/CD, and infrastructure as code.</p></div>
@@ -223,11 +238,11 @@ footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center;
     <h2 class="sec-title reveal">Built on real delivery, not slideware.</h2>
     <div class="creds-grid">
       <ul class="cred-list reveal">
-        <li><span class="cred-check">&#10003;</span><span><b>Azure Solutions Architect Expert (AZ-305)</b> and AZ-104 certified.</span></li>
-        <li><span class="cred-check">&#10003;</span><span><b>MSc in Medical Informatics.</b> Formal grounding in clinical data and health systems.</span></li>
         <li><span class="cred-check">&#10003;</span><span><b>8 years</b> delivering HL7 and FHIR integration across EMEA and North America.</span></li>
         <li><span class="cred-check">&#10003;</span><span><b>30+ device connectivity projects</b> across 17 countries with a 95.5% on-time rate.</span></li>
         <li><span class="cred-check">&#10003;</span><span>Deep stack across <b>Azure Health Data Services, Logic Apps, Service Bus, Functions,</b> and Bicep IaC.</span></li>
+        <li><span class="cred-check">&#10003;</span><span>A practice that scales with <b>senior associates</b> for larger, multi-site engagements.</span></li>
+        <li class="cred-fine"><span>Credentials on the team: Azure Solutions Architect Expert (AZ-305), AZ-104, and an MSc in Medical Informatics.</span></li>
       </ul>
       <div class="portfolio-card reveal">
         <h3>The work is public.</h3>
@@ -237,6 +252,31 @@ footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center;
     </div>
   </div>
 </section>
+
+<section id="case-studies">
+  <div class="wrap">
+    <div class="sec-label reveal">Case study</div>
+    <h2 class="sec-title reveal">Multi-site rollout at scale.</h2>
+    <p class="sec-intro reveal">A representative engagement from the team's delivery record. Client named generically for confidentiality.</p>
+    <div class="cases reveal">
+      <div class="case">
+        <div class="case-tag">Global diagnostics manufacturer</div>
+        <h3>Standardising device integration across 30+ facilities in 8 countries.</h3>
+        <div class="case-row"><div class="case-k">Situation</div><div class="case-v">A global diagnostics manufacturer needed to integrate diagnostic devices across more than 30 healthcare facilities in 8 countries. Each site ran different EHR systems, IT teams, and regulatory requirements, with no standardised integration process. Average deployment time was 8 weeks per site.</div></div>
+        <div class="case-row"><div class="case-k">Task</div><div class="case-v">Lead a team of 5 integration specialists to deliver every site on time and on budget, compliant with HIPAA, GDPR, and FDA 21 CFR Part 11 at the same time.</div></div>
+        <div class="case-row"><div class="case-k">Approach</div><div class="case-v">We built standardised HL7 and FHIR integration frameworks and reusable connectivity templates, so each site deployment became a configuration exercise rather than an engineering project. We architected the Azure integration layer using Logic Apps and API Management, giving secure connectivity between on-premises lab systems and cloud platforms.</div></div>
+        <div class="case-row"><div class="case-k">Outcome</div><div class="case-v">A repeatable rollout model that held its quality bar across every site.</div></div>
+        <div class="case-metrics">
+          <div class="case-metric"><b>35%</b><span>Faster deployment, 8 to 5 weeks</span></div>
+          <div class="case-metric"><b>95.5%</b><span>On-time delivery</span></div>
+          <div class="case-metric"><b>97.5%</b><span>System uptime</span></div>
+          <div class="case-metric"><b>Zero</b><span>Critical production incidents</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="architecture" class="architecture">
   <div class="wrap">
